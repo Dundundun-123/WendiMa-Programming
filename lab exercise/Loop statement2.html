@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop exercise</title>
+    <script>let input = prompt("Please input a positive integer:");
+        let n = parseInt(input);
+        
+        if (isNaN(n) || n <= 0) {
+          console.log("Please enter a valid positive integer！");
+        } else {
+          let i = 1;
+        
+          // use while to decide the printing times
+          while (i <= n) {
+            console.log(`This is the ${i} time to output: Hi,you look good!`);
+            i++;
+          }
+        }
+        </script>
+</head>
+<body>
+</body>
+</html>
