@@ -1,0 +1,34 @@
+CREATE DATABASE my_database;
+
+USE my_database;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO users (first_name, last_name, email) 
+VALUES ('Wendi', 'Ma', 'mawe@tcd.ie');
+
+INSERT INTO users (first_name, last_name, email) 
+VALUES 
+    ('Mimi', 'Lee', 'MimiL@tcd.ie'),
+    ('Alice', 'Wu', 'AlW@tcd.ie');
+
+SELECT * FROM users;
+
+SELECT first_name, last_name FROM users;
+
+SELECT * FROM users WHERE first_name = 'Wendi';
+
+SELECT * FROM users ORDER BY created_at DESC;
+
+UPDATE users 
+SET last_name = 'M' 
+WHERE first_name = 'Wendi';
+
+DELETE FROM users WHERE first_name = 'Mimi';
+

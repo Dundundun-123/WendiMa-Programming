@@ -1,0 +1,20 @@
+SELECT users.first_name, users.last_name, orders.product
+FROM users
+INNER JOIN orders ON users.id = orders.user_id;
+
+SELECT users.first_name, users.last_name, orders.product
+FROM users
+LEFT JOIN orders ON users.id = orders.user_id
+UNION
+SELECT users.first_name, users.last_name, orders.product
+FROM users
+RIGHT JOIN orders ON users.id = orders.user_id;
+
+SELECT * FROM users WHERE first_name LIKE '%an%';
+
+SELECT * FROM users WHERE first_name LIKE 'J_a%';
+
+SELECT * FROM users WHERE last_name LIKE 'Smith';
+
+SELECT * FROM users WHERE last_name NOT LIKE 'Smith';
+

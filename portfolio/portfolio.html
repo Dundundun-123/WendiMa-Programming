@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendi's portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Arima:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation bar -->
+    <header>
+        <div class="navbar">
+            <div class="avatar">
+                <a href="homepage.html"><img src="pic/myavatar.jpg" alt="My Avatar"></a>
+            </div>
+            <div class="nav-links">
+                <!-- links to other pages -->
+                <a href="About.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="https://www.instagram.com/popo_p129/profilecard/?igsh=aWZ6eXJhNDFiNGJn">
+                    <img src="pic/igPage.jpg" alt="icon" class="icon">
+                </a>
+                <a href="mailto:wendy1726@163.com?subject=cooperation" class="email-link">
+                    <img src="pic/eAddress.jpg" alt="send email" class="icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- sorting buttons -->
+    <div class="sorting-section">
+        <span>Sort by</span>
+        <div class="sort-buttons">
+            <button onclick="sortPortfolio('date')">Date</button>
+            <button onclick="sortPortfolio('coding')">Proportion of Coding</button>
+            <button onclick="sortPortfolio('illustrating')">Proportion of Illustrating</button>
+            <button onclick="sortPortfolio('hardware')">Proportion of Hardware</button>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <main class="portfolio-section">
+        <div class="portfolio" data-date="2023-02" data-coding="0.5" data-illustrating="0.2" data-hardware="0.6" id="project1">
+            <a href="project1.html"> <!--link to project1 page-->
+                <img src="pic/project1.jpg" alt="Project 1" class="portfolio-image">
+            </a>
+            <p>
+                BLOOD IN BLOOM<br>
+            </p>
+            <p>
+                Installation Art | 02.2023
+            </p>
+            <hr class="styled-hr">
+            <p class="portfolio-description">
+                Despite progress by women in birth control, the IUD remains often overlooked. In underserved regions, limited knowledge and access to care leave many women facing irreversible harm. This installation seeks to illuminate these challenges, encouraging awareness and respect for women’s right to informed reproductive choices.
+            </p>
+        </div>
+
+        <div class="portfolio" data-date="2023-10" data-coding="0.1" data-illustrating="0.9" data-hardware="0.1" id="project2">
+            <a href="project2.html"> <!--link to project2 page-->
+                <img src="pic/project2.jpg" alt="Project 2" class="portfolio-image">
+            </a>
+            <p>
+                ANTARCHY<br>
+            </p>
+            <p>
+                Board Game | 10.2023
+            </p>
+            <hr class="styled-hr">
+            <p class="portfolio-description">
+                Antarchy is a board game inspired by Deleuze's line of flight, featuring two gameplay modes within an ant colony. In Stability Mode, players adopt fixed roles to collaborate on colony goals, while in Wandering Mode, they venture into the unknown, seeking freedom from the queen ant's constraints. The game encourages reflection on individuality, social norms, and the complexities of survival.
+            </p>
+        </div>
+
+        <div class="portfolio" data-date="2023-07" data-coding="0.8" data-illustrating="0.5" data-hardware="0.8" id="project3">
+            <a href="project3.html"><!--link to project3 page-->
+                <img src="pic/project3.jpg" alt="Project 3" class="portfolio-image">
+            </a>
+            <p>
+                PAIN NAVIGATOR<br>
+            </p>
+            <p>
+                Interactive Device | 07.2023
+            </p>
+            <hr class="styled-hr">
+            <p class="portfolio-description">
+                Pain Navigator is an interactive device designed for children that visualizes pain using synesthesia principles. It features dynamic graphics to represent various pain types, enabling kids to express their feelings more effectively during medical visits. By interacting with the device, children can intuitively communicate their pain experiences, helping healthcare professionals make accurate diagnoses and provide better treatment.
+            </p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendi's project3</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Arima:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation bar -->
+    <header>
+        <div class="navbar">
+            <div class="avatar">
+                <a href="homepage.html"><img src="pic/myavatar.jpg" alt="My Avatar"></a>
+            </div>
+            <div class="nav-links">
+                <!-- links to other pages -->
+                <a href="About.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="https://www.instagram.com/popo_p129/profilecard/?igsh=aWZ6eXJhNDFiNGJn">
+                    <img src="pic/igPage.jpg" alt="icon" class="icon">
+                </a>
+                <a href="mailto:wendy1726@163.com?subject=cooperation" class="email-link">
+                    <img src="pic/eAddress.jpg" alt="send email" class="icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <section class="project">
+            <div class="project-item">
+                <h1>PAIN NAVIGATOR</h1>
+                <!-- make the picture full screen when clicking -->
+                <img src="pic/pic3/3-1.jpg" alt="project pic" class="project-image" onclick="openModal(this)">
+                <img src="pic/pic3/3-2.jpg" alt="project pic" class="project-image" onclick="openModal(this)">
+                <img src="pic/pic3/3-3.jpg" alt="project pic" class="project-image" onclick="openModal(this)">
+                <img src="pic/pic3/3-4.jpg" alt="project pic" class="project-image" onclick="openModal(this)">
+                <img src="pic/pic3/3-5.jpg" alt="project pic" class="project-image" onclick="openModal(this)">
+                <img src="pic/pic3/3-6.jpg" alt="project pic" class="project-image" onclick="openModal(this)">
+                <img src="pic/pic3/3-7.jpg" alt="project pic" class="project-image" onclick="openModal(this)">
+            </div>
+
+            <!-- modal -->
+            <div id="myModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img class="modal-content" alt="image" id="img01" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==">
+            </div>
+            
+            <div id="comments-section" data-project-id="project3">
+                <h2>Comments</h2>
+                <!-- Comment list: displays the latest comments -->
+                <div id="comment-list" class="comment-list-container">
+                    <!-- Submitted comments will be displayed here -->
+                </div>
+                
+                <!-- Comment input form -->
+                <textarea id="comment-input" placeholder="Enter your comment..."></textarea>
+                <button id="submit-comment">Submit Comment</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
